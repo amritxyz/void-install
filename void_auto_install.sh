@@ -2,10 +2,12 @@ cat << "EOF"
 
 
 ------------------------------------------------
-          _    _     _     _____      ____  __
- __ _____(_)__| |  _| |_  |   \ \    / |  \/  |
- \ V / _ | / _` | |_   _| | |) \ \/\/ /| |\/| |
-  \_/\___|_\__,_|   |_|   |___/ \_/\_/ |_|  |_|
+
+ __   __   _    _     _     ___
+ \ \ / /__(_)__| |  _| |_  |   \__ __ ___ __
+  \ V / _ \ / _` | |_   _| | |) \ V  V / '  \
+   \_/\___/_\__,_|   |_|   |___/ \_/\_/|_|_|_|
+
 
 ------------------------------------------------
 
@@ -14,7 +16,7 @@ EOF
 
 # Install essential packages
 sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel \
-	libXft-devel brightnessctl xwallpaper htop xset lf alsa-utils font-awesome6 \
+	libXft-devel brightnessctl xwallpaper htop xset xdotool lf alsa-utils font-awesome6 \
 	nerd-fonts-symbols-ttf xcompmgr fastfetch firefox nsxiv neovim mpv newsboat sxhkd \
 	bleachbit unzip zathura zathura-pdf-poppler
 
