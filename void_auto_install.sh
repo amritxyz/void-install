@@ -12,26 +12,44 @@ cat << "EOF"
 
 EOF
 
+# Install essential packages
 sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel \
 	libXft-devel brightnessctl xwallpaper htop xset lf alsa-utils font-awesome6 \
 	nerd-fonts-symbols-ttf xcompmgr fastfetch firefox nsxiv neovim mpv newsboat sxhkd \
 	bleachbit unzip zathura zathura-pdf-poppler
 
+# Clone dotfiles repository
 git clone --depth=1 https://gitlab.com/amrit-44404/voidrice $HOME/voidrice
+
+# Create necessary directories
 mkdir -p $HOME/.local/share $HOME/.config $HOME/.local/src
 
-echo "=> copying configs from dotfiles"
+# Copy configuration files
+cat << "EOF"
 
+=> copying configs from dotfiles"
+
+EOF
 cp -r $HOME/voidrice/.local/share/* $HOME/.local/share
 \cp -r $HOME/voidrice/.config/* $HOME/.config
 \cp $HOME/voidrice/.bashrc $HOME/.bashrc
 \cp $HOME/voidrice/.xinitrc $HOME/.xinitrc
-cd $HOME/.local/share/ && ./wal
 
+# Clone walls
+git clone --depth=1 https://gitlab.com/amrit-44404/void-wall $HOME/.local/share
+
+# Clone and build dwm environment
 git clone --depth=1 https://gitlab.com/amrit-44404/void-dwm $HOME/.local/src/void-dwm
 
 sudo make -C ~/.local/src/void-dwm/dwm/ clean install
 sudo make -C ~/.local/src/void-dwm/dmenu/ clean install
 sudo make -C ~/.local/src/void-dwm/st/ clean install
 sudo make -C ~/.local/src/void-dwm/slstatus/ clean install
-echo "=> installation completed"
+
+cat << "EOF"
+
+=> Installation completed successfully.
+
+EOF
+
+# End of script
