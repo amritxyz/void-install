@@ -36,7 +36,7 @@ cp -r $HOME/voidrice/.local/share/* $HOME/.local/share
 \cp $HOME/voidrice/.xinitrc $HOME/.xinitrc
 
 # Clone walls
-git clone --depth=1 https://gitlab.com/amrit-44404/void-wall $HOME/.local/share
+git clone --depth=1 https://gitlab.com/amrit-44404/void-wall $HOME/.local/share/void-wall
 
 # Clone and build dwm environment
 git clone --depth=1 https://gitlab.com/amrit-44404/void-dwm $HOME/.local/src/void-dwm
