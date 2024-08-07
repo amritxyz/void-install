@@ -17,7 +17,7 @@ EOF
 # Install essential packages
 sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel \
 	libXft-devel brightnessctl xwallpaper htop xset xdotool lf alsa-utils font-awesome6 \
-	nerd-fonts-symbols-ttf xcompmgr fastfetch firefox nsxiv neovim mpv newsboat sxhkd \
+	font-hack-ttf nerd-fonts-symbols-ttf picom fastfetch firefox nsxiv neovim mpv newsboat sxhkd \
 	bleachbit unzip zathura zathura-pdf-poppler
 
 # Clone dotfiles repository
