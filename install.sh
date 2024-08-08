@@ -22,7 +22,7 @@ sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel 
 git clone --depth=1 https://gitlab.com/amrit-44404/voidrice $HOME/voidrice
 
 # Create necessary directories
-mkdir -p $HOME/.local/share $HOME/.config $HOME/.local/src $HOME/.local/hugo-dir $HOME/.local/ff
+mkdir -p $HOME/.local/share $HOME/.config $HOME/.local/src $HOME/.local/bin $HOME/.local/hugo-dir
 
 # Copy configuration files
 cat << "EOF"
@@ -31,6 +31,7 @@ cat << "EOF"
 
 EOF
 cp -r $HOME/voidrice/.local/share/* $HOME/.local/share
+\cp -r $HOME/archice/.local/bin/* $HOME/.local/bin
 \cp -r $HOME/voidrice/.config/* $HOME/.config
 \cp $HOME/voidrice/.bashrc $HOME/.bashrc
 \cp $HOME/voidrice/.xinitrc $HOME/.xinitrc
