@@ -46,6 +46,11 @@ sudo make -C ~/.local/src/void-dwm/dmenu/ clean install
 sudo make -C ~/.local/src/void-dwm/st/ clean install
 sudo make -C ~/.local/src/void-dwm/slstatus/ clean install
 
+# Clean home folder
+mkdir -p $HOME/.local/git-repos
+mv $HOME/voidrice $HOME/.local/git-repos
+mv $HOME/void-install $HOME/.local/git-repos
+
 cat << "EOF"
 
 => Installation completed successfully.
