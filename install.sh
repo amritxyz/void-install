@@ -34,6 +34,7 @@ cp -r $HOME/voidrice/.local/share/* $HOME/.local/share
 \cp -r $HOME/voidrice/.local/bin/* $HOME/.local/bin
 \cp -r $HOME/voidrice/.config/* $HOME/.config
 \cp $HOME/voidrice/.bashrc $HOME/.bashrc
+\cp $HOME/voidrice/.inputrc $HOME/.inputrc
 \cp $HOME/voidrice/.xinitrc $HOME/.xinitrc
 
 # Clone walls
