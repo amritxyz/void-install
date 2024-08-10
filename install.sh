@@ -16,7 +16,7 @@ EOF
 sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel \
 	libXft-devel brightnessctl xwallpaper htop xset xdotool lf alsa-utils font-awesome6 \
 	font-hack-ttf nerd-fonts-symbols-ttf noto-fonts-emoji slock picom fastfetch firefox nsxiv neovim mpv newsboat \
-	bleachbit unzip zathura zathura-pdf-poppler
+	bleachbit unzip zathura zathura-pdf-poppler scrot
 
 # Clone dotfiles repository
 git clone --depth=1 https://gitlab.com/amrit-44404/voidrice $HOME/voidrice
