@@ -15,7 +15,7 @@ EOF
 # Install essential packages
 sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel \
 	libXft-devel brightnessctl xwallpaper htop xset xdotool lf alsa-utils font-awesome6 \
-	font-hack-ttf nerd-fonts-symbols-ttf noto-fonts-emoji slock xcompmgr fastfetch firefox nsxiv neovim mpv newsboat \
+	font-hack-ttf nerd-fonts-symbols-ttf noto-fonts-emoji slock xcompmgr fastfetch nsxiv neovim mpv newsboat \
 	bleachbit unzip zathura zathura-pdf-poppler scrot xf86-video-intel NetworkManager
 
 # Clone dotfiles repository
@@ -50,6 +50,7 @@ sudo make -C ~/.local/src/void-dwm/slstatus/ clean install
 
 sudo mkdir -p /etc/X11/xorg.conf.d/
 sudo cp $HOME/voidrice/.local/share/20-intel.conf /etc/X11/xorg.conf.d/
+sudo cp $HOME/voidrice/.local/share/hosts /etc/hosts
 
 # Clean home directory
 mkdir -p $HOME/.local/git-repos
