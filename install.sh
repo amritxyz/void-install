@@ -48,8 +48,8 @@ sudo make -C ~/.local/src/void-dwm/dmenu/ clean install
 sudo make -C ~/.local/src/void-dwm/st/ clean install
 sudo make -C ~/.local/src/void-dwm/slstatus/ clean install
 
-sudo mkdir -p /etc/X11/xorg.conf.d/
-sudo cp $HOME/voidrice/.local/share/20-intel.conf /etc/X11/xorg.conf.d/
+#sudo mkdir -p /etc/X11/xorg.conf.d/
+#sudo cp $HOME/voidrice/.local/share/20-intel.conf /etc/X11/xorg.conf.d/
 sudo cp $HOME/voidrice/.local/share/hosts /etc/hosts
 
 # Clean home directory
