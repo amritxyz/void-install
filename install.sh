@@ -27,7 +27,12 @@ mkdir -p $HOME/.local/share $HOME/.config $HOME/.local/src $HOME/.local/bin $HOM
 # Copy configuration files
 cat << "EOF"
 
-=> copying configs from dotfiles"
+
+   ___           __ _               _             ___      _    __ _ _
+  / __|___ _ _  / _(_)__ _ _  _ _ _(_)_ _  __ _  |   \ ___| |_ / _(_) |___ ___
+ | (__/ _ \ ' \|  _| / _` | || | '_| | ' \/ _` | | |) / _ \  _|  _| | / -_|_-<
+  \___\___/_||_|_| |_\__, |\_,_|_| |_|_||_\__, | |___/\___/\__|_| |_|_\___/__/
+                     |___/                |___/
 
 EOF
 cp -r $HOME/voidrice/.local/share/* $HOME/.local/share
