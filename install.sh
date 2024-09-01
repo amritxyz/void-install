@@ -27,7 +27,6 @@ mkdir -p $HOME/.local/share $HOME/.config $HOME/.local/src $HOME/.local/bin $HOM
 # Copy configuration files
 cat << "EOF"
 
-
    ___           __ _               _             ___      _    __ _ _
   / __|___ _ _  / _(_)__ _ _  _ _ _(_)_ _  __ _  |   \ ___| |_ / _(_) |___ ___
  | (__/ _ \ ' \|  _| / _` | || | '_| | ' \/ _` | | |) / _ \  _|  _| | / -_|_-<
