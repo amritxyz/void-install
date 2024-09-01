@@ -36,7 +36,6 @@ cp -r $HOME/voidrice/.local/share/* $HOME/.local/share
 \cp $HOME/voidrice/.bashrc $HOME/.bashrc
 \cp $HOME/voidrice/.inputrc $HOME/.inputrc
 \cp $HOME/voidrice/.xinitrc $HOME/.xinitrc
-\cp $HOME/voidrice/.Xmodmap $HOME/.Xmodmap
 
 # Clone walls
 git clone --depth=1 https://gitlab.com/amrit-44404/void-wall $HOME/.local/share/void-wall
