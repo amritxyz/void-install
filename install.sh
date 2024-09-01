@@ -18,9 +18,6 @@ sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel 
 	font-hack-ttf nerd-fonts-symbols-ttf noto-fonts-emoji slock xcompmgr fastfetch firefox nsxiv neovim mpv newsboat \
 	bleachbit unzip zathura zathura-pdf-poppler scrot xf86-video-intel NetworkManager
 
-# Clone dotfiles repository
-git clone --depth=1 https://gitlab.com/amrit-44404/voidrice $HOME/voidrice
-
 # Create necessary directories
 mkdir -p $HOME/.local/share $HOME/.config $HOME/.local/src $HOME/.local/bin $HOME/.local/hugo-dir
 
@@ -34,6 +31,13 @@ cat << "EOF"
                      |___/                |___/
 
 EOF
+
+# Clone dotfiles repository
+git clone --depth=1 https://gitlab.com/amrit-44404/voidrice.git/ $HOME/voidrice
+
+# Clone walls
+git clone --depth=1 https://gitlab.com/amrit-44404/void-wall.git/ $HOME/.local/share/void-wall
+
 cp -r $HOME/voidrice/.local/share/* $HOME/.local/share
 \cp -r $HOME/voidrice/.local/bin/* $HOME/.local/bin
 \cp -r $HOME/voidrice/.config/* $HOME/.config
@@ -41,11 +45,18 @@ cp -r $HOME/voidrice/.local/share/* $HOME/.local/share
 \cp $HOME/voidrice/.inputrc $HOME/.inputrc
 \cp $HOME/voidrice/.xinitrc $HOME/.xinitrc
 
-# Clone walls
-git clone --depth=1 https://gitlab.com/amrit-44404/void-wall $HOME/.local/share/void-wall
+cat << "EOF"
+
+  ___         _        _ _ _             ___         _   _             ___       __ _
+ |_ _|_ _  __| |_ __ _| | (_)_ _  __ _  / __|_  _ __| |_| |___ ______ / __| ___ / _| |___ __ ____ _ _ _ ___ ___
+  | || ' \(_-<  _/ _` | | | | ' \/ _` | \__ \ || / _| / / / -_|_-<_-< \__ \/ _ \  _|  _\ V  V / _` | '_/ -_|_-<
+ |___|_||_/__/\__\__,_|_|_|_|_||_\__, | |___/\_,_\__|_\_\_\___/__/__/ |___/\___/_|  \__|\_/\_/\__,_|_| \___/__/
+                                 |___/
+
+EOF
 
 # Clone and build dwm environment
-git clone --depth=1 https://gitlab.com/amrit-44404/void-dwm $HOME/.local/src/void-dwm
+git clone --depth=1 https://gitlab.com/amrit-44404/void-dwm.git/ $HOME/.local/src/void-dwm
 
 sudo make -C ~/.local/src/void-dwm/dwm/ clean install
 sudo make -C ~/.local/src/void-dwm/dmenu/ clean install
