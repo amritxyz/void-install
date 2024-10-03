@@ -33,10 +33,10 @@ cat << "EOF"
 EOF
 
 # Clone dotfiles repository
-git clone --depth=1 https://gitlab.com/amrit-44404/voidrice.git/ $HOME/voidrice
+git clone --depth=1 https://gitlab.com/NyxVoid/voidrice.git/ $HOME/voidrice
 
 # Clone walls
-git clone --depth=1 https://gitlab.com/amrit-44404/void-wall.git/ $HOME/.local/share/void-wall
+git clone --depth=1 https://gitlab.com/NyxVoid/void-wall.git/ $HOME/.local/share/void-wall
 
 cp -r $HOME/voidrice/.local/share/* $HOME/.local/share
 \cp -r $HOME/voidrice/.local/bin/* $HOME/.local/bin
@@ -56,7 +56,7 @@ cat << "EOF"
 EOF
 
 # Clone and build dwm environment
-git clone --depth=1 https://gitlab.com/amrit-44404/void-dwm.git/ $HOME/.local/src/void-dwm
+git clone --depth=1 https://gitlab.com/NyxVoid/void-dwm.git/ $HOME/.local/src/void-dwm
 
 sudo make -C ~/.local/src/void-dwm/dwm/ clean install
 sudo make -C ~/.local/src/void-dwm/dmenu/ clean install
@@ -71,6 +71,10 @@ sudo cp $HOME/voidrice/.local/share/hosts /etc/hosts
 mkdir -p $HOME/.local/git-repos
 mv $HOME/voidrice $HOME/.local/git-repos
 mv $HOME/void-install $HOME/.local/git-repos
+
+# Idont know why void do this
+mkdir -p $HOME/.cache
+sudo chown void:void $HOME/.cache
 
 cat << "EOF"
 
