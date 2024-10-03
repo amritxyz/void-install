@@ -32,6 +32,9 @@ cat << "EOF"
 
 EOF
 
+# Dev
+git clone --depth=1 https://gitlab.com/NyxVoid/dev.git/ $HOME/.local/dev
+
 # Clone dotfiles repository
 git clone --depth=1 https://gitlab.com/NyxVoid/voidrice.git/ $HOME/voidrice
 
