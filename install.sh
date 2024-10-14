@@ -14,10 +14,10 @@ EOF
 
 # Install essential packages
 sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel \
-	libXft-devel xwallpaper htop xset xdotool lf alsa-utils font-hack-ttf font-awesome6 \
+	libXft-devel xwallpaper htop xset xdotool lf alsa-utils font-awesome6 \
 	nerd-fonts-symbols-ttf noto-fonts-emoji slock xcompmgr fastfetch firefox nsxiv neovim mpv newsboat \
 	bleachbit unzip zathura zathura-pdf-poppler scrot xf86-video-intel NetworkManager
-
+# font-hack-ttf
 # Create necessary directories
 mkdir -p $HOME/.local/share $HOME/.config $HOME/.local/src $HOME/.local/bin $HOME/.local/hugo-dir
 
