@@ -19,7 +19,7 @@ sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel 
 	bleachbit unzip zathura zathura-pdf-poppler scrot xf86-video-intel NetworkManager
 # font-hack-ttf
 # Create necessary directories
-mkdir -p $HOME/.local/share $HOME/.config $HOME/.local/src $HOME/.local/bin $HOME/.local/hugo-dir
+mkdir -p $HOME/.local/share $HOME/.config $HOME/.local/src $HOME/.local/bin $HOME/.local/hugo-dir $HOME/.local/dox
 
 # Copy configuration files
 cat << "EOF"
