@@ -48,6 +48,9 @@ cp -r $HOME/voidrice/.local/share/* $HOME/.local/share
 \cp $HOME/voidrice/.inputrc $HOME/.inputrc
 \cp $HOME/voidrice/.xinitrc $HOME/.xinitrc
 
+# NeoVim
+git clone --depth=1 https://gitlab.com/NyxVoid/nvim.git $HOME/.config/nvim
+
 cat << "EOF"
 
   ___         _        _ _ _             ___         _   _             ___       __ _
