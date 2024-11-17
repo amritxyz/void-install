@@ -32,6 +32,9 @@ cat << "EOF"
 
 EOF
 
+# NeoVim
+git clone --depth=1 https://gitlab.com/NyxVoid/nvim.git $HOME/.config/nvim
+
 # Dev
 git clone --depth=1 https://gitlab.com/NyxVoid/dev.git/ $HOME/.local/dev
 
@@ -47,9 +50,6 @@ cp -r $HOME/voidrice/.local/share/* $HOME/.local/share
 \cp $HOME/voidrice/.bashrc $HOME/.bashrc
 \cp $HOME/voidrice/.inputrc $HOME/.inputrc
 \cp $HOME/voidrice/.xinitrc $HOME/.xinitrc
-
-# NeoVim
-git clone --depth=1 https://gitlab.com/NyxVoid/nvim.git $HOME/.config/nvim
 
 cat << "EOF"
 
