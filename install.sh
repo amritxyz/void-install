@@ -21,7 +21,7 @@ sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel 
 # wget nodejs
 # font-hack-ttf
 # Create necessary directories
-mkdir -p $HOME/.local/share $HOME/.config $HOME/.local/src $HOME/.local/bin $HOME/.local/hugo-dir $HOME/.local/dox
+mkdir -p $HOME/.local/share $HOME/.config $HOME/.local/src $HOME/.local/bin $HOME/.local/hugo-dir $HOME/.local/dox $HOME/.local/vids
 
 # Copy configuration files
 cat << "EOF"
