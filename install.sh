@@ -13,11 +13,11 @@ cat << "EOF"
 EOF
 
 # Install essential packages
-sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel \
-	libXft-devel xwallpaper htop xclip xset xdotool lf alsa-utils font-awesome6 adwaita-icon-theme \
+sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel libXft-devel \
+	ffmpeg xwallpaper htop xclip xset xdotool lf alsa-utils font-awesome6 adwaita-icon-theme \
 	nerd-fonts-symbols-ttf noto-fonts-emoji slock xcompmgr fastfetch firefox nsxiv neovim mpv newsboat \
 	bleachbit unzip zathura zathura-pdf-poppler scrot xf86-video-intel NetworkManager tmux \
-	rust go ripgrep hugo
+	rust go ripgrep hugo wget
 
 # gimp obs
 # wget nodejs
