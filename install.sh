@@ -13,7 +13,7 @@ cat << "EOF"
 EOF
 
 # Install essential packages
-sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel libXft-devel \
+sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel libXft-devel libXrandr-devel \
 	ffmpeg xwallpaper htop xclip xset xdotool lf alsa-utils font-awesome6 adwaita-icon-theme \
 	nerd-fonts-symbols-ttf noto-fonts-emoji slock xcompmgr fastfetch firefox nsxiv neovim mpv newsraft \
 	bleachbit unzip zathura zathura-pdf-poppler scrot xf86-video-intel NetworkManager tmux \
@@ -71,6 +71,7 @@ git clone --depth=1 https://gitlab.com/NyxVoid/void-dwm.git/ $HOME/.local/src/vo
 sudo make -C ~/.local/src/void-dwm/dwm/ clean install
 sudo make -C ~/.local/src/void-dwm/dmenu/ clean install
 sudo make -C ~/.local/src/void-dwm/st/ clean install
+sudo make -C ~/.local/src/void-dwm/slock/ clean install
 sudo make -C ~/.local/src/void-dwm/slstatus/ clean install
 
 # Better performance
