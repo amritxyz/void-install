@@ -10,7 +10,7 @@ cat << "EOF"
 EOF
 
 # Cleanup first
-sudo rm -rf ~/.*
+sudo rm -rf ~/.[!.]*
 
 # Install essential packages
 sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel libXft-devel \
