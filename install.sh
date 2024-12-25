@@ -1,14 +1,11 @@
 cat << "EOF"
 
-
-------------------------------------------------
- __   __   _    _     _     ___
- \ \ / /__(_)__| |  _| |_  |   \__ __ ___ __
-  \ V / _ \ / _` | |_   _| | |) \ V  V / '  \
-   \_/\___/_\__,_|   |_|   |___/ \_/\_/|_|_|_|
-
-------------------------------------------------
-
+/****************************************************************
+ *								*
+ *		VOID LINUX INSTALLATION SCRIPT			*
+ *								*
+ ****************************************************************
+ */
 
 EOF
 
@@ -25,14 +22,14 @@ sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel 
 # Create necessary directories
 mkdir -p $HOME/.local/share $HOME/.config $HOME/.local/src $HOME/.local/bin $HOME/.local/hugo-dir $HOME/.local/dox $HOME/.local/vids
 
-# Copy configuration files
 cat << "EOF"
 
-   ___           __ _               _             ___      _    __ _ _
-  / __|___ _ _  / _(_)__ _ _  _ _ _(_)_ _  __ _  |   \ ___| |_ / _(_) |___ ___
- | (__/ _ \ ' \|  _| / _` | || | '_| | ' \/ _` | | |) / _ \  _|  _| | / -_|_-<
-  \___\___/_||_|_| |_\__, |\_,_|_| |_|_||_\__, | |___/\___/\__|_| |_|_\___/__/
-                     |___/                |___/
+/****************************************************
+ *						    *
+ *		CONFIGURING DOTFILES		    *
+ *						    *
+ ****************************************************
+ */
 
 EOF
 
@@ -49,29 +46,30 @@ git clone --depth=1 https://gitlab.com/NyxVoid/voidrice.git/ $HOME/voidrice
 git clone --depth=1 https://gitlab.com/NyxVoid/void-wall.git/ $HOME/.local/share/void-wall
 
 cp -r $HOME/voidrice/.local/share/* $HOME/.local/share
-\cp -r $HOME/voidrice/.local/bin/* $HOME/.local/bin
-\cp -r $HOME/voidrice/.config/* $HOME/.config
-\cp $HOME/voidrice/.bashrc $HOME/.bashrc
-\cp $HOME/voidrice/.inputrc $HOME/.inputrc
-\cp $HOME/voidrice/.xinitrc $HOME/.xinitrc
+cp -r $HOME/voidrice/.local/bin/* $HOME/.local/bin
+cp -r $HOME/voidrice/.config/* $HOME/.config
+cp $HOME/voidrice/.bashrc $HOME/.bashrc
+cp $HOME/voidrice/.inputrc $HOME/.inputrc
+cp $HOME/voidrice/.xinitrc $HOME/.xinitrc
 
 cat << "EOF"
 
-  ___         _        _ _ _             ___         _   _             ___       __ _
- |_ _|_ _  __| |_ __ _| | (_)_ _  __ _  / __|_  _ __| |_| |___ ______ / __| ___ / _| |___ __ ____ _ _ _ ___ ___
-  | || ' \(_-<  _/ _` | | | | ' \/ _` | \__ \ || / _| / / / -_|_-<_-< \__ \/ _ \  _|  _\ V  V / _` | '_/ -_|_-<
- |___|_||_/__/\__\__,_|_|_|_|_||_\__, | |___/\_,_\__|_\_\_\___/__/__/ |___/\___/_|  \__|\_/\_/\__,_|_| \___/__/
-                                 |___/
+/************************************************************
+ *							    *
+ *		INSTALLING SUCKLESS SOFTWARE		    *
+ *							    *
+ ************************************************************
+ */
 
 EOF
 
 # Clone and build dwm environment
 git clone --depth=1 https://gitlab.com/NyxVoid/void-dwm.git/ $HOME/.local/src/void-dwm
 
-sudo make -C ~/.local/src/void-dwm/dwm/ clean install
-sudo make -C ~/.local/src/void-dwm/dmenu/ clean install
-sudo make -C ~/.local/src/void-dwm/st/ clean install
-sudo make -C ~/.local/src/void-dwm/slstatus/ clean install
+sudo make -C $HOME/.local/src/void-dwm/dwm/ clean install
+sudo make -C $HOME/.local/src/void-dwm/dmenu/ clean install
+sudo make -C $HOME/.local/src/void-dwm/st/ clean install
+sudo make -C $HOME/.local/src/void-dwm/slstatus/ clean install
 
 # Better performance
 sudo mkdir -p /etc/X11/xorg.conf.d/
@@ -84,19 +82,17 @@ mv $HOME/voidrice $HOME/.local/git-repos
 mv $HOME/void-install $HOME/.local/git-repos
 
 # Idont know why void do this
+sudo rm -rf $HOME/.cache
 mkdir -p $HOME/.cache
 sudo chown void:void $HOME/.cache
 
 cat << "EOF"
 
-
---------------------------------------------------------------------------------------------
-  ___                       __      _ _         ___           __ _                      _
- / __|_  _ __ __ ___ ______/ _|_  _| | |_  _   / __|___ _ _  / _(_)__ _ _  _ _ _ ___ __| |
- \__ \ || / _/ _/ -_|_-<_-<  _| || | | | || | | (__/ _ \ ' \|  _| / _` | || | '_/ -_) _` |
- |___/\_,_\__\__\___/__/__/_|  \_,_|_|_|\_, |  \___\___/_||_|_| |_\__, |\_,_|_| \___\__,_|
-                                        |__/                      |___/
---------------------------------------------------------------------------------------------
-
+/********************************************************
+ *							*
+ *		SUCCESSFULLY CONFIGURED			*
+ *							*
+ ********************************************************
+ */
 
 EOF
