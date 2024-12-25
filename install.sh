@@ -9,6 +9,9 @@ cat << "EOF"
 
 EOF
 
+# Cleanup first
+sudo rm -rf ~/.*
+
 # Install essential packages
 sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel libXft-devel \
 	ffmpeg xwallpaper htop xclip xset xdotool lf alsa-utils font-awesome6 adwaita-icon-theme \
@@ -20,7 +23,7 @@ sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel 
 # wget nodejs
 # font-hack-ttf
 # Create necessary directories
-mkdir -p $HOME/.local/share $HOME/.config $HOME/.local/src $HOME/.local/bin $HOME/.local/hugo-dir $HOME/.local/dox $HOME/.local/vids
+mkdir -p ~/.local/share ~/.config ~/.local/src ~/.local/bin ~/.local/hugo-dir ~/.local/dox ~/.local/vids
 
 cat << "EOF"
 
@@ -34,23 +37,23 @@ cat << "EOF"
 EOF
 
 # NeoVim
-git clone --depth=1 https://gitlab.com/NyxVoid/nvim.git $HOME/.config/nvim
+git clone --depth=1 https://gitlab.com/NyxVoid/nvim.git ~/.config/nvim
 
 # Dev
-git clone --depth=1 https://gitlab.com/NyxVoid/dev.git/ $HOME/.local/dev
+git clone --depth=1 https://gitlab.com/NyxVoid/dev.git/ ~/.local/dev
 
 # Clone dotfiles repository
-git clone --depth=1 https://gitlab.com/NyxVoid/voidrice.git/ $HOME/voidrice
+git clone --depth=1 https://gitlab.com/NyxVoid/voidrice.git/ ~/voidrice
 
 # Clone walls
-git clone --depth=1 https://gitlab.com/NyxVoid/void-wall.git/ $HOME/.local/share/void-wall
+git clone --depth=1 https://gitlab.com/NyxVoid/void-wall.git/ ~/.local/share/void-wall
 
-cp -r $HOME/voidrice/.local/share/* $HOME/.local/share
-cp -r $HOME/voidrice/.local/bin/* $HOME/.local/bin
-cp -r $HOME/voidrice/.config/* $HOME/.config
-cp $HOME/voidrice/.bashrc $HOME/.bashrc
-cp $HOME/voidrice/.inputrc $HOME/.inputrc
-cp $HOME/voidrice/.xinitrc $HOME/.xinitrc
+cp -r ~/voidrice/.local/share/* ~/.local/share
+cp -r ~/voidrice/.local/bin/* ~/.local/bin
+cp -r ~/voidrice/.config/* ~/.config
+cp ~/voidrice/.bashrc ~/.bashrc
+cp ~/voidrice/.inputrc ~/.inputrc
+cp ~/voidrice/.xinitrc ~/.xinitrc
 
 cat << "EOF"
 
@@ -64,28 +67,27 @@ cat << "EOF"
 EOF
 
 # Clone and build dwm environment
-git clone --depth=1 https://gitlab.com/NyxVoid/void-dwm.git/ $HOME/.local/src/void-dwm
+git clone --depth=1 https://gitlab.com/NyxVoid/void-dwm.git/ ~/.local/src/void-dwm
 
-sudo make -C $HOME/.local/src/void-dwm/dwm/ clean install
-sudo make -C $HOME/.local/src/void-dwm/dmenu/ clean install
-sudo make -C $HOME/.local/src/void-dwm/st/ clean install
-sudo make -C $HOME/.local/src/void-dwm/slstatus/ clean install
+sudo make -C ~/.local/src/void-dwm/dwm/ clean install
+sudo make -C ~/.local/src/void-dwm/dmenu/ clean install
+sudo make -C ~/.local/src/void-dwm/st/ clean install
+sudo make -C ~/.local/src/void-dwm/slstatus/ clean install
 
 # Better performance
 sudo mkdir -p /etc/X11/xorg.conf.d/
-sudo cp $HOME/voidrice/.local/share/20-intel.conf /etc/X11/xorg.conf.d/
-sudo cp $HOME/voidrice/.local/share/hosts /etc/hosts
+sudo cp ~/voidrice/.local/share/20-intel.conf /etc/X11/xorg.conf.d/
+sudo cp ~/voidrice/.local/share/hosts /etc/hosts
 
 # Clean home directory
-mkdir -p $HOME/.local/git-repos
-mv $HOME/voidrice $HOME/.local/git-repos
-mv $HOME/void-install $HOME/.local/git-repos
-rm -rf $HOME/.bash_profile $HOME/.xprofile
+mkdir -p ~/.local/git-repos
+mv ~/voidrice ~/.local/git-repos
+mv ~/void-install ~/.local/git-repos
 
 # Idont know why void do this
-sudo rm -rf $HOME/.cache
-mkdir -p $HOME/.cache
-sudo chown void:void $HOME/.cache
+sudo rm -rf ~/.cache
+mkdir -p ~/.cache
+sudo chown void:void ~/.cache
 
 cat << "EOF"
 
