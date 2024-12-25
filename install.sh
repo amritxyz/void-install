@@ -80,6 +80,7 @@ sudo cp $HOME/voidrice/.local/share/hosts /etc/hosts
 mkdir -p $HOME/.local/git-repos
 mv $HOME/voidrice $HOME/.local/git-repos
 mv $HOME/void-install $HOME/.local/git-repos
+rm -rf $HOME/.bash_profile $HOME/.xprofile
 
 # Idont know why void do this
 sudo rm -rf $HOME/.cache
