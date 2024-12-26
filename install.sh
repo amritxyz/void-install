@@ -52,6 +52,7 @@ cp -r ~/voidrice/.local/share/* ~/.local/share
 cp -r ~/voidrice/.local/bin/* ~/.local/bin
 cp -r ~/voidrice/.config/* ~/.config
 cp ~/voidrice/.bashrc ~/.bashrc
+cp ~/voidrice/.bash_profile ~/.bash_profile
 cp ~/voidrice/.inputrc ~/.inputrc
 cp ~/voidrice/.xinitrc ~/.xinitrc
 
