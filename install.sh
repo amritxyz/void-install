@@ -23,7 +23,7 @@ sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel 
 # wget nodejs
 # font-hack-ttf
 # Create necessary directories
-mkdir -p ~/.local/share ~/.config ~/.local/src ~/.local/bin ~/.local/hugo-dir ~/.local/dox ~/.local/vids ~/.local/music
+mkdir -p ~/.local/share ~/.config ~/.local/src ~/.local/bin ~/.local/hugo-dir ~/.local/dox ~/.local/vids ~/.local/music ~/.local/audio
 
 cat << "EOF"
 
