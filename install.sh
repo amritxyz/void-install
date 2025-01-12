@@ -18,7 +18,7 @@ sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel 
 	nerd-fonts-symbols-ttf noto-fonts-emoji slock xcompmgr fastfetch firefox nsxiv neovim mpv newsraft \
 	bleachbit unzip zathura zathura-pdf-poppler scrot xf86-video-intel NetworkManager tmux \
 	ripgrep hugo wget deluge-gtk \
-	rust go openjdk17
+	rust go openjdk21
 
 # gimp obs qbittorrent
 # wget nodejs
