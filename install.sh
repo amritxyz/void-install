@@ -16,8 +16,8 @@ sudo rm -rf ~/.[!.]*
 sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel libXft-devel \
 	git-lfs ffmpeg xwallpaper htop xclip xset xdotool lf alsa-utils font-awesome6 adwaita-icon-theme \
 	nerd-fonts-symbols-ttf noto-fonts-emoji slock xcompmgr fastfetch firefox nsxiv neovim mpv newsraft \
-	bleachbit unzip zathura zathura-pdf-poppler scrot xf86-video-intel NetworkManager tmux fzf curl \
-	ripgrep hugo wget deluge-gtk gimp \
+	bleachbit unzip zathura zathura-pdf-poppler scrot xf86-video-intel NetworkManager tmux \
+	ripgrep hugo wget deluge-gtk gimp fzf curl cmatrix \
 	rust go openjdk21
 
 # obs qbittorrent
