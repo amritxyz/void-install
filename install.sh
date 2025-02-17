@@ -79,6 +79,7 @@ sudo make -C ~/.local/src/void-dwm/slstatus/ clean install
 # Better performance
 sudo mkdir -p /etc/X11/xorg.conf.d/
 sudo cp ~/voidrice/.local/share/20-intel.conf /etc/X11/xorg.conf.d/
+sudo cp ~/voidrice/.local/share/40-libinput.conf /etc/X11/xorg.conf.d/
 sudo cp ~/voidrice/.local/share/hosts /etc/hosts
 
 # Clean home directory
