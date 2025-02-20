@@ -13,11 +13,12 @@ EOF
 sudo rm -rf ~/.[!.]*
 
 # Install essential packages
-sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel libXft-devel \
+sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel libXft-devel libXrandr-devel \
 	git-lfs ffmpeg xwallpaper htop xclip xset xdotool lf alsa-utils font-awesome6 adwaita-icon-theme \
 	nerd-fonts-symbols-ttf noto-fonts-emoji slock xcompmgr fastfetch firefox nsxiv neovim mpv newsraft \
-	bleachbit unzip zathura zathura-pdf-poppler scrot xf86-video-intel NetworkManager tmux \
+	bleachbit unzip zathura zathura-pdf-poppler scrot NetworkManager tmux \
 	ripgrep hugo wget deluge-gtk gimp fzf curl cmatrix yt-dlp \
+	intel-video-accel vulkan-loader mesa-vulkan-intel mesa-dri \
 	rust go openjdk21
 
 # obs qbittorrent
@@ -75,6 +76,7 @@ sudo make -C ~/.local/src/void-dwm/dwm/ clean install
 sudo make -C ~/.local/src/void-dwm/dmenu/ clean install
 sudo make -C ~/.local/src/void-dwm/st/ clean install
 sudo make -C ~/.local/src/void-dwm/slstatus/ clean install
+sudo make -C ~/.local/src/void-dwm/slock/ clean install
 
 # Better performance
 sudo mkdir -p /etc/X11/xorg.conf.d/
