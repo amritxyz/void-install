@@ -21,7 +21,7 @@ sudo xbps-install base-devel xorg-fonts xorg-server xrandr xrdb xclip brightness
 	bleachbit unzip zathura zathura-pdf-poppler scrot NetworkManager tmux \
 	ripgrep hugo wget deluge-gtk gimp fzf curl cmatrix yt-dlp \
 	intel-video-accel vulkan-loader mesa-vulkan-intel mesa-dri \
-	rust go openjdk21
+	rust go openjdk21 clang-tools-extra
 
 # libva-intel-driver linux-firmware-intel ## Note: They listed under intel-video-accel meta package
 # obs qbittorrent
