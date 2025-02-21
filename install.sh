@@ -13,8 +13,10 @@ EOF
 sudo rm -rf ~/.[!.]*
 
 # Install essential packages
-sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel libXft-devel libXrandr-devel \
-	git-lfs ffmpeg xwallpaper htop xclip xset xdotool lf alsa-utils font-awesome6 adwaita-icon-theme \
+sudo xbps-install base-devel xorg-fonts xorg-server xrandr xrdb xclip brightnessctl setxkbmap xf86-input-libinput \
+	harfbuzz-devel libX11-devel libXinerama-devel libXft-devel libXrandr-devel \
+	xorg-fonts xorg-server xrandr xrdb xclip brightnessctl setxkbmap xf86-input-libinput \
+	git-lfs ffmpeg xwallpaper htop xset xdotool lf alsa-utils font-awesome6 adwaita-icon-theme \
 	nerd-fonts-symbols-ttf noto-fonts-emoji slock xcompmgr fastfetch firefox nsxiv neovim mpv newsraft \
 	bleachbit unzip zathura zathura-pdf-poppler scrot NetworkManager tmux \
 	ripgrep hugo wget deluge-gtk gimp fzf curl cmatrix yt-dlp \
