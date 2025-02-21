@@ -13,14 +13,13 @@ EOF
 sudo rm -rf ~/.[!.]*
 
 # Install essential packages
-sudo xbps-install base-devel xorg-fonts xorg-server xrandr xrdb xclip brightnessctl setxkbmap xf86-input-libinput \
-	harfbuzz-devel libX11-devel libXinerama-devel libXft-devel libXrandr-devel \
-	xorg-fonts xorg-server xrandr xrdb xclip brightnessctl setxkbmap xf86-input-libinput \
-	git-lfs ffmpeg xwallpaper htop xset xdotool lf alsa-utils font-awesome6 adwaita-icon-theme \
-	nerd-fonts-symbols-ttf noto-fonts-emoji slock xcompmgr fastfetch firefox nsxiv neovim mpv newsraft \
-	bleachbit unzip zathura zathura-pdf-poppler scrot NetworkManager tmux \
-	ripgrep hugo wget deluge-gtk gimp fzf curl yt-dlp \
+sudo xbps-install base-devel harfbuzz-devel libX11-devel libXinerama-devel libXft-devel libXrandr-devel \
+	xorg-fonts xorg-server xrandr xrdb xclip xdotool xset xwallpaper setxkbmap xf86-input-libinput \
+	git-lfs ffmpeg htop lf alsa-utils font-awesome6 adwaita-icon-theme brightnessctl xcompmgr \
 	intel-video-accel vulkan-loader mesa-vulkan-intel mesa-dri \
+	nerd-fonts-symbols-ttf noto-fonts-emoji fastfetch firefox nsxiv neovim mpv tmux \
+	bleachbit unzip zathura zathura-pdf-poppler scrot NetworkManager newsraft \
+	ripgrep hugo wget deluge-gtk gimp fzf curl yt-dlp \
 	rust go openjdk21 clang-tools-extra
 
 # libva-intel-driver linux-firmware-intel ## Note: They listed under intel-video-accel meta package
@@ -84,7 +83,7 @@ sudo make -C ~/.local/src/void-dwm/slock/ clean install
 
 # Better performance
 sudo mkdir -p /etc/X11/xorg.conf.d/
-sudo cp ~/voidrice/.local/share/20-intel.conf /etc/X11/xorg.conf.d/
+sudo cp ~/voidrice/.local/share/10-modesetting.conf /etc/X11/xorg.conf.d/
 sudo cp ~/voidrice/.local/share/40-libinput.conf /etc/X11/xorg.conf.d/
 sudo cp ~/voidrice/.local/share/hosts /etc/hosts
 
