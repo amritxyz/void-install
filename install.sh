@@ -23,6 +23,7 @@ sudo xbps-install base-devel xorg-fonts xorg-server xrandr xrdb xclip brightness
 	intel-video-accel vulkan-loader mesa-vulkan-intel mesa-dri \
 	rust go openjdk21
 
+# libva-intel-driver linux-firmware-intel ## Note: They listed under intel-video-accel meta package
 # obs qbittorrent
 # wget nodejs
 # font-hack-ttf
