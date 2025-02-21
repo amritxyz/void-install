@@ -19,12 +19,13 @@ sudo xbps-install base-devel xorg-fonts xorg-server xrandr xrdb xclip brightness
 	git-lfs ffmpeg xwallpaper htop xset xdotool lf alsa-utils font-awesome6 adwaita-icon-theme \
 	nerd-fonts-symbols-ttf noto-fonts-emoji slock xcompmgr fastfetch firefox nsxiv neovim mpv newsraft \
 	bleachbit unzip zathura zathura-pdf-poppler scrot NetworkManager tmux \
-	ripgrep hugo wget deluge-gtk gimp fzf curl cmatrix yt-dlp \
+	ripgrep hugo wget deluge-gtk gimp fzf curl yt-dlp \
 	intel-video-accel vulkan-loader mesa-vulkan-intel mesa-dri \
 	rust go openjdk21 clang-tools-extra
 
 # libva-intel-driver linux-firmware-intel ## Note: They listed under intel-video-accel meta package
-# obs qbittorrent
+# xinput libxatracker xfontsel xauth
+# obs qbittorrent cmatrix 
 # wget nodejs
 # font-hack-ttf
 # Create necessary directories
