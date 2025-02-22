@@ -16,11 +16,11 @@ sudo rm -rf ~/.[!.]*
 sudo xbps-install base-devel harfbuzz-devel libX11-devel libXinerama-devel libXft-devel libXrandr-devel \
 	xorg-fonts xorg-server xrandr xrdb xclip xdotool xset xwallpaper setxkbmap xf86-input-libinput \
 	git-lfs ffmpeg htop lf alsa-utils font-awesome6 adwaita-icon-theme brightnessctl xcompmgr \
-	intel-video-accel vulkan-loader mesa-vulkan-intel mesa-dri \
+	intel-video-accel vulkan-loader mesa-vulkan-intel mesa-dri mesa-vaapi \
 	nerd-fonts-symbols-ttf noto-fonts-emoji fastfetch firefox nsxiv neovim mpv tmux \
 	bleachbit unzip zathura zathura-pdf-poppler scrot NetworkManager newsraft \
 	ripgrep hugo wget deluge-gtk gimp fzf curl yt-dlp \
-	cargo go openjdk21 clang-tools-extra
+	cargo go openjdk21 clang-tools-extra nodejs pyright
 
 # libva-intel-driver linux-firmware-intel ## Note: They listed under intel-video-accel meta package
 # xinput libxatracker xfontsel xauth
