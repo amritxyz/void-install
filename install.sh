@@ -20,7 +20,7 @@ sudo xbps-install base-devel harfbuzz-devel libX11-devel libXinerama-devel libXf
 	nerd-fonts-symbols-ttf noto-fonts-emoji fastfetch firefox nsxiv neovim mpv tmux \
 	bleachbit unzip zathura zathura-pdf-poppler scrot NetworkManager newsraft \
 	ripgrep hugo wget deluge-gtk gimp fzf curl yt-dlp \
-	cargo go openjdk21 clang-tools-extra nodejs pyright
+	rust cargo rust-analyzer go openjdk21 clang-tools-extra nodejs pyright
 
 # libva-intel-driver linux-firmware-intel ## Note: They listed under intel-video-accel meta package
 # xinput libxatracker xfontsel xauth
