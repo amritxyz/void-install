@@ -14,7 +14,7 @@ sudo rm -rf ~/.[!.]*
 
 # Install essential packages
 sudo xbps-install base-devel harfbuzz-devel libX11-devel libXinerama-devel libXft-devel libXrandr-devel \
-	xorg-fonts xorg-server xrandr xrdb xclip xdotool xset xwallpaper setxkbmap xf86-input-libinput \
+	xorg-fonts xorg-server xrandr xrdb xclip xdotool xset xwallpaper xinit setxkbmap xf86-input-libinput \
 	git-lfs ffmpeg htop lf alsa-utils font-awesome6 adwaita-icon-theme brightnessctl xcompmgr \
 	intel-video-accel vulkan-loader mesa-vulkan-intel mesa-dri mesa-vaapi libva-utils \
 	nerd-fonts-symbols-ttf noto-fonts-emoji fastfetch firefox nsxiv neovim mpv tmux \
