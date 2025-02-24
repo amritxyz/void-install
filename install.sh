@@ -42,16 +42,16 @@ cat << "EOF"
 EOF
 
 # NeoVim
-git clone --depth=1 https://github.com/amritxyz/nvim.git ~/.config/nvim
+git clone --depth=1 https://gitlab.com/amritxyz/nvim.git ~/.config/nvim
 
 # Dev
-git clone --depth=1 https://github.com/amritxyz/dev.git/ ~/.local/dev
+git clone --depth=1 https://gitlab.com/amritxyz/dev.git/ ~/.local/dev
 
 # Clone dotfiles repository
-git clone --depth=1 https://github.com/amritxyz/voidrice.git/ ~/voidrice
+git clone --depth=1 https://gitlab.com/amritxyz/voidrice.git/ ~/voidrice
 
 # Clone walls
-git clone --depth=1 https://github.com/amritxyz/void-wall.git/ ~/.local/share/void-wall
+git clone --depth=1 https://gitlab.com/amritxyz/void-wall.git/ ~/.local/share/void-wall
 
 cp -r ~/voidrice/.local/share/* ~/.local/share
 cp -r ~/voidrice/.local/bin/* ~/.local/bin
@@ -73,7 +73,7 @@ cat << "EOF"
 EOF
 
 # Clone and build dwm environment
-git clone --depth=1 https://github.com/amritxyz/void-dwm.git/ ~/.local/src/void-dwm
+git clone --depth=1 https://gitlab.com/amritxyz/void-dwm.git/ ~/.local/src/void-dwm
 
 sudo make -C ~/.local/src/void-dwm/dwm/ clean install
 sudo make -C ~/.local/src/void-dwm/dmenu/ clean install
