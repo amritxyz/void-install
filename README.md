@@ -30,7 +30,7 @@ These libraries are essential for building the software from source.
 
 You can find the installation instructions for **Dwm**, **Dmenu**, **St**, **Slstatus**, and **Slock** from the official Suckless Software repository:
 
-[Official Suckless Website](https://suckless.org)
+[Official Suckless Website](https://suckless.org) </br>
 [My build of Suckless Softwares](https://github.com/amritxyz/void-dwm)
 
 ---
