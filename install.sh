@@ -42,7 +42,7 @@ cat << "EOF"
 EOF
 
 # NeoVim
-git clone --depth=1 https://github.com/amritxyz/nvim.git ~/.config/nvim
+git clone --depth=1 https://github.com/amritxyz/kickstart-nvim.git ~/.config/nvim
 
 # Dev
 git clone --depth=1 https://github.com/amritxyz/dev.git/ ~/.local/dev
