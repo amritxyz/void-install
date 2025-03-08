@@ -15,7 +15,7 @@ sudo rm -rf ~/.[!.]*
 # Install essential packages
 sudo xbps-install base-devel harfbuzz-devel libX11-devel libXinerama-devel libXft-devel libXrandr-devel \
 	xorg-fonts xorg-server xrandr xrdb xclip xdotool xset xwallpaper xinit setxkbmap xf86-input-libinput \
-	git-lfs ffmpeg htop lf alsa-utils font-awesome6 adwaita-icon-theme brightnessctl xcompmgr \
+	git-lfs ffmpeg htop lf alsa-utils font-awesome6 adwaita-icon-theme brightnessctl picom \
 	intel-video-accel vulkan-loader mesa-vulkan-intel mesa-dri mesa-vaapi libva-utils intel-media-driver \
 	nerd-fonts-symbols-ttf noto-fonts-emoji fastfetch firefox nsxiv neovim mpv tmux \
 	bleachbit unzip zathura zathura-pdf-poppler scrot NetworkManager newsraft \
@@ -24,7 +24,7 @@ sudo xbps-install base-devel harfbuzz-devel libX11-devel libXinerama-devel libXf
 
 # libva-intel-driver linux-firmware-intel ## Note: They listed under intel-video-accel meta package
 # xinput libxatracker xfontsel xauth
-# obs qbittorrent cmatrix 
+# obs qbittorrent cmatrix xcompmgr
 # wget nodejs
 # font-hack-ttf
 # Create necessary directories
