@@ -12,10 +12,7 @@ cat << "EOF"
 EOF
 
 # Cleanup first
-read -rep ':: Would you like to cleanup Home Dir? [Y/n] ' DLT
-if [[ $DLT == "Y" || $DLT == "y" || -z $DLT ]]; then
-	sudo rm -rf ~/.[!.]*
-fi
+sudo rm -rf ~/.[!.]*
 
 # Install essential packages
 sudo xbps-install base-devel harfbuzz-devel libX11-devel libXinerama-devel libXft-devel libXrandr-devel \
