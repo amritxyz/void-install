@@ -12,7 +12,7 @@ cat << "EOF"
 EOF
 
 # Cleanup first
-read -rep 'Would you like to cleanup Home Dir? [Y/n] ' DLT
+read -rp 'Would you like to cleanup Home Dir? [Y/n] ' DLT
 if [ "$DLT" = "Y" ] || [ "$DLT" = "y" ] || [ -z "$DLT" ]; then
 	sudo rm -rf ~/.[!.]*
 fi
