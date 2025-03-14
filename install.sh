@@ -104,6 +104,9 @@ sudo chown $(whoami):$(whoami) ~/.cache
 sudo mkdir -p /run/user/$(id -u)
 sudo chown $(whoami):$(whoami) /run/user/$(id -u)
 
+# Reload All Feeds
+newsraft -e reload-all
+
 cat << "EOF"
 
 /********************************************************
