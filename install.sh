@@ -88,6 +88,7 @@ sudo mkdir -p /etc/X11/xorg.conf.d/
 sudo cp ~/voidrice/.local/share/10-modesetting.conf /etc/X11/xorg.conf.d/
 sudo cp ~/voidrice/.local/share/40-libinput.conf /etc/X11/xorg.conf.d/
 sudo cp ~/voidrice/.local/share/hosts /etc/hosts
+sudo cp ~/voidrice/.local/share/sysctl.conf /etc/sysctl.conf
 
 # Clean home directory
 mkdir -p ~/.local/git-repos
@@ -102,12 +103,6 @@ sudo chown $(whoami):$(whoami) ~/.cache
 # XDG_RUNTIME_DIR
 sudo mkdir -p /run/user/$(id -u)
 sudo chown $(whoami):$(whoami) /run/user/$(id -u)
-
-# Disable ipv6
-cat << "EOF" > /etc/sysctl.conf
-net.ipv6.conf.all.disable_ipv6 = 1
-net.ipv6.conf.default.disable_ipv6 = 1
-EOF
 
 cat << "EOF"
 
