@@ -97,7 +97,11 @@ mv ~/void-install ~/.local/git-repos
 # Idont know why void do this
 sudo rm -rf ~/.cache
 mkdir -p ~/.cache
-sudo chown void:void ~/.cache
+sudo chown $(whoami):$(whoami) ~/.cache
+
+# XDG_RUNTIME_DIR
+sudo mkdir -p /run/user/$(id -u)
+sudo chown $(whoami):$(whoami) /run/user/$(id -u)
 
 cat << "EOF"
 
