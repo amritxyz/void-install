@@ -12,7 +12,10 @@ cat << "EOF"
 EOF
 
 # Cleanup first
-sudo rm -rf ~/.[!.]*
+read -rep 'Would you like to cleanup Home Dir? [Y/n] ' DLT
+if [ "$DLT" = "Y" ] || [ "$DLT" = "y" ] || [ -z "$DLT" ]; then
+	sudo rm -rf ~/.[!.]*
+fi
 
 # Install essential packages
 sudo xbps-install base-devel harfbuzz-devel libX11-devel libXinerama-devel libXft-devel libXrandr-devel \
@@ -95,7 +98,7 @@ mkdir -p ~/.local/git-repos
 mv ~/voidrice ~/.local/git-repos
 mv ~/void-install ~/.local/git-repos
 
-# Idont know why void do this
+# I don't know why void do this
 sudo rm -rf ~/.cache
 mkdir -p ~/.cache
 sudo chown $(whoami):$(whoami) ~/.cache
