@@ -101,8 +101,8 @@ mkdir -p ~/.cache
 sudo chown $(whoami):$(whoami) ~/.cache
 
 # XDG_RUNTIME_DIR
-sudo mkdir -p /run/user/$(id -u)
-sudo chown $(whoami):$(whoami) /run/user/$(id -u)
+# sudo mkdir -p /run/user/$(id -u)
+# sudo chown $(whoami):$(whoami) /run/user/$(id -u)
 
 # Reload All Feeds
 newsraft -e reload-all
