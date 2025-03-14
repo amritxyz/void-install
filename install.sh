@@ -103,6 +103,12 @@ sudo chown $(whoami):$(whoami) ~/.cache
 sudo mkdir -p /run/user/$(id -u)
 sudo chown $(whoami):$(whoami) /run/user/$(id -u)
 
+# Disable ipv6
+cat << "EOF" > /etc/sysctl.conf
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+EOF
+
 cat << "EOF"
 
 /********************************************************
