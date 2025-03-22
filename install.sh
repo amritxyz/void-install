@@ -24,12 +24,12 @@ sudo xbps-install base-devel harfbuzz-devel libX11-devel libXinerama-devel libXf
 	intel-video-accel vulkan-loader mesa-vulkan-intel mesa-dri mesa-vaapi libva-utils intel-media-driver \
 	nerd-fonts-symbols-ttf noto-fonts-emoji fastfetch firefox nsxiv neovim mpv tmux \
 	bleachbit unzip zathura zathura-pdf-poppler scrot NetworkManager newsraft \
-	ripgrep hugo wget deluge-gtk gimp fzf curl yt-dlp ImageMagick \
+	ripgrep hugo wget deluge-gtk fzf curl yt-dlp ImageMagick \
 	rust cargo rust-analyzer go openjdk17 apache-maven clang-tools-extra nodejs pyright
 
 # libva-intel-driver linux-firmware-intel ## Note: They listed under intel-video-accel meta package
 # xinput libxatracker xfontsel xauth
-# obs qbittorrent cmatrix picom
+# obs gimp qbittorrent cmatrix picom
 # wget nodejs
 # font-hack-ttf
 # Create necessary directories
